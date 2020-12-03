@@ -29,7 +29,7 @@ async def on_message(message):
         if message.author.bot: return
         await message.channel.send(responces[rd.randint(0,1)])
     if message.author is not '{0.user}'.format(client):
-    if message.author.bot: return
+        if message.author.bot: return
         print(message.author, '{0.user}'.format(client))
         print(message.content, message.author)
         for i in prohibited_words:
