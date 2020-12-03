@@ -26,6 +26,7 @@ async def members(message):
 async def on_message(message):
     channel = client.get_channel(500270127229698070)
     if 'daddy uzi' in message.content.lower():
+        if message.author.bot: return
         await message.channel.send(responces[rd.randint(0,1)])
     if message.author is not '{0.user}'.format(client):
     if message.author.bot: return
